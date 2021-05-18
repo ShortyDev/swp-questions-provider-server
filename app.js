@@ -45,9 +45,17 @@ const getRandomQuestion = () => {
     new Answer("CSS", true), new Answer("Java", false), 
     new Answer("Python", false), new Answer("Go", false))
 
-    new Question("In welchem Jahr ist die Corona-Pandemie ausgebrochen (In Wuhan)?",
+    new Question("In welchem Jahr ist die Corona-Pandemie in Wuhan ausgebrochen?",
     new Answer("2019", true), new Answer("2020", false), 
     new Answer("2021", false), new Answer("2018", false))
+
+    new Question("Wer war der US-Präsident in 2016-2020?",
+    new Answer("Donald Trump", true), new Answer("Barack Obama", false), 
+    new Answer("Hillary Clinton", false), new Answer("Joe Biden", false))
+
+    new Question("In welcher Zeitzone liegt Österreich?",
+    new Answer("MEZ", true), new Answer("MET", false), 
+    new Answer("GMT", false), new Answer("MLZ", false))
 }
 
 app.get("/new/random", (req, res) => {
