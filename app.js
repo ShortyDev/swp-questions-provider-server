@@ -4,35 +4,23 @@ const questions = []
 
 class Question {
     constructor(question, ...answers) {
-        this._question = question
-        this._answers = answers
+        this.question = question
+        this.answers = answers
         questions.push(this)
     }
     addAnswer(name, correct) {
-        this._answers.push(
+        this.answers.push(
             new Answer(name, correct)
         )
     }
     addAnswer(answer) {
-        this._answers.push(answer)
-    }
-    get answers() {
-        return this._answers
-    }
-    get question() {
-        return this._question
+        this.answers.push(answer)
     }
 }
 class Answer {
     constructor(name, correct) {
-        this._name = name
-        this._correct = correct
-    }
-    get name() {
-        return this._name
-    }
-    get correct() {
-        return this.correct
+        this.name = name
+        this.correct = correct
     }
 }
 
@@ -60,7 +48,9 @@ const getRandomQuestion = () => {
 
 app.get("/new/random", (req, res) => {
     res.setHeader("Access-Control-Allow-Origin", "*")
-    res.send(JSON.stringify(getRandomQuestion()))
+    randomQuestion = getRandomQuestion()
+    res.send(JSON.stringify(randomQuestion))
+    console.log("A random question was fetched")
 })
 
 app.listen(process.env.PORT || 5000, () => {})
