@@ -5,4 +5,4 @@ app.get("/new/random", (req, res) => {
     res.send("test")
 })
 
-app.listen(5000, () => {})
+app.listen(process.env.PORT, () => {})
