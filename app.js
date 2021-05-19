@@ -60,6 +60,18 @@ const getRandomQuestion = () => {
     new Question("Welche Steuer gibt es nicht?",
     new Answer("Zusteuer", true), new Answer("Einkommenssteuer", false), 
     new Answer("Alkoholsteuer", false), new Answer("Umsatzsteuer", false))
+
+    new Question("Welches Porsche-Modell ist am bekanntesten?",
+    new Answer("918", false), new Answer("911", true), 
+    new Answer("Boxter", false), new Answer("Speedster", false))
+
+    new Question("Wer hat am meisten Handys im Q4 in 2020 verkauft?",
+    new Answer("Samsung", false), new Answer("Apple", true), 
+    new Answer("Xiaomi", false), new Answer("OnePlus", false))
+
+    new Question("Wie viele Einwohner hat Österreich in etwa?",
+    new Answer("etwa 10 Millionen", false), new Answer("etwa 8 Millionen", true), 
+    new Answer("etwa 9 Millionen", false), new Answer("etwa 7 Millionen", false))
 }
 
 app.get("/new/random", (req, res) => {
