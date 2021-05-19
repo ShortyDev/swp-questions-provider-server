@@ -47,7 +47,7 @@ const getRandomQuestion = () => {
 
     new Question("Welche Schreibweise ist richtig?",
     new Answer("parralel", false), new Answer("parrallel", false), 
-    new Answer("paralell", false), new Answer("parellel", true))
+    new Answer("paralell", false), new Answer("parallel", true))
 
     new Question("Welches Land ist nicht in der EU? (2021/05)",
     new Answer("Österreich", false), new Answer("Slowenien", false), 
