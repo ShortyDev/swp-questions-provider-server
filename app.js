@@ -72,6 +72,14 @@ const getRandomQuestion = () => {
     new Question("Wie viele Einwohner hat Österreich in etwa?",
     new Answer("etwa 10 Millionen", false), new Answer("etwa 8 Millionen", true), 
     new Answer("etwa 9 Millionen", false), new Answer("etwa 7 Millionen", false))
+
+    new Question("Was ist die meistbenutzte Programmiersprache?",
+    new Answer("JavaScript", false), new Answer("Python", true), 
+    new Answer("Swift", false), new Answer("Java", false))
+
+    new Question("Welche Programmiersprache wird hauptsächlich für iOS-Applikationen verwendet?",
+    new Answer("HTML", false), new Answer("Swift", true), 
+    new Answer("Go", false), new Answer("Java", false))
 }
 
 app.get("/new/random", (req, res) => {
