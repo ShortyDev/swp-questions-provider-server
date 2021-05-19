@@ -44,6 +44,22 @@ const getRandomQuestion = () => {
     new Question("In welcher Zeitzone liegt Österreich?",
     new Answer("MEZ", true), new Answer("MET", false), 
     new Answer("GMT", false), new Answer("MLZ", false))
+
+    new Question("Welche Schreibweise ist richtig?",
+    new Answer("parralel", false), new Answer("parrallel", false), 
+    new Answer("paralell", false), new Answer("parellel", true))
+
+    new Question("Welches Land ist nicht in der EU? (2021/05)",
+    new Answer("Österreich", false), new Answer("Slowenien", false), 
+    new Answer("Türkei", true), new Answer("Weißrussland", false))
+
+    new Question("Welche dieser Schulformen gibt es in Deutschland nicht?",
+    new Answer("HTL", true), new Answer("Gymansium", false), 
+    new Answer("Mittelschule/Hauptschule", false), new Answer("Realschule", false))
+
+    new Question("Welche Steuer gibt es nicht?",
+    new Answer("Zusteuer", true), new Answer("Einkommenssteuer", false), 
+    new Answer("Alkoholsteuer", false), new Answer("Umsatzsteuer", false))
 }
 
 app.get("/new/random", (req, res) => {
