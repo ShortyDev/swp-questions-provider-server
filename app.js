@@ -68,11 +68,7 @@ const getRandomQuestion = () => {
     new Question("Wer hat am meisten Handys im Q4 in 2020 verkauft?",
     new Answer("Samsung", false), new Answer("Apple", true), 
     new Answer("Xiaomi", false), new Answer("OnePlus", false))
-
-    new Question("Wie viele Einwohner hat Österreich in etwa?",
-    new Answer("etwa 10 Millionen", false), new Answer("etwa 8 Millionen", true), 
-    new Answer("etwa 9 Millionen", false), new Answer("etwa 7 Millionen", false))
-
+    
     new Question("Was ist die meistbenutzte Programmiersprache?",
     new Answer("JavaScript", false), new Answer("Python", true), 
     new Answer("Swift", false), new Answer("Java", false))
