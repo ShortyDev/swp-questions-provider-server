@@ -78,7 +78,7 @@ const getRandomQuestion = () => {
     new Answer("Swift", false), new Answer("Java", false))
 
     new Question("Welche Programmiersprache wird hauptsächlich für iOS-Applikationen verwendet?",
-    new Answer("HTML", false), new Answer("Swift", true), 
+    new Answer("C++", false), new Answer("Swift", true), 
     new Answer("Go", false), new Answer("Java", false))
 }
 
